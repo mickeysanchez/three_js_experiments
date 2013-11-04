@@ -2,7 +2,7 @@
 var sphereMaterial = new THREE.MeshLambertMaterial({color: 0xCC0000});
 
 // create cube material
-var coolMaterial = new THREE.MeshBasicMaterial({map: THREE.ImageUtils.loadTexture('crate.jpg')});
+var coolMaterial = new THREE.MeshBasicMaterial({color: 0xCC0000, map: THREE.ImageUtils.loadTexture('crate.jpg')});
  
 // set up the sphere vars
 var radius = 50, segments = 16, rings = 16;

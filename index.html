@@ -8,7 +8,7 @@
 	<body>
 
 		<div id="container">
-		
+		click anywhere to go full screen
 		</div>
 
 	</body>
@@ -55,8 +55,8 @@
 
 		// add controls
 		var controls = new THREE.FirstPersonControls(camera);
-		controls.movementSpeed = 100;
-		controls.lookSpeed = 0.1;
+		controls.movementSpeed = 200;
+		controls.lookSpeed = .1;
 		controls.lookVertical = false;
 		controls.noFly = true;
 		
@@ -79,9 +79,7 @@
 	    }
 		animate();
 	
-		document.body.addEventListener("keydown", function() {
-		  THREEx.FullScreen.request();
-		}, false);
+		document.body.addEventListener("click", function() {THREEx.FullScreen.request();}, false);
 			
 	</script>
 </html>
